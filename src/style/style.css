@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    width: 100%;
+    color: white;
+}
+
+header, .menu{
+    background-color: rgb(31, 36, 45, 0.5);
+ }
+
+.menu ul{
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.menu ul li {
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.title {
+    margin: 0 100px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1f242d;
+}
+
+.local_text_home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-left: 100px;
+    padding-right: 10px;
+    color: #fff;
+}
+
+.local_text_home h3 strong {
+    color: #0ef;
+}
+
+.local_text_home a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0ef;
+    border: 2px solid #0ef;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.local_text_home h1, h3, p, a{    
+    margin: 7px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.download button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #0ef;
+    border-radius: 150px;
+    height: 50px;
+    width: 150px;
+    color: white;
+
+}
+
+.image_home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 10%;
+}
+
+.image_home img {
+    filter: drop-shadow(15px 5px 5px #0ef);
+    border-radius: 200px;
+    width: 300px;
+    height: 500px;
+    margin-bottom: 150px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #323946;
+}
+
+.image_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.image_about img {
+    filter: drop-shadow(0px 40px 40px #0ef);
+    border-radius: 200px;
+    width: 300px;
+    height: 500px;
+    margin-bottom: 150px;
+}
+
+.local_text_about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-right: 100px;
+    color: #fff;
+}
+
+.read {
+    display: flex;
+    margin: 5px 0;
+}
+
+.read button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #0ef;
+    border-radius: 150px;
+    height: 50px;
+    width: 150px;
+    color: white;
+
+}
+
+.local_text_about h1 strong{
+    color: #0ef;
+}
+
+.projects {
+    height: 100vh;
+    width: 100%;
+    background-color: #1f242d;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.paigrid {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    width: 100%;
+    height: 90%;
+}
+
+.box {
+    display: grid;
+    place-items: center;
+    padding: 0 30px;
+}
+
+.box a {
+    color: white;
+    font-weight: 900;
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.title_projects {
+    padding-top: 10px;
+}
+
+.projects h1 {
+    color: white;
+}
+
+.projects h1 strong {
+    color: #0ef;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #323946;
+}
+
+.grid-contact {
+    display: grid;
+    place-items: center;
+    grid-template-rows: 20vh 20vh 40vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "one two"
+    "three four"
+    "five five"
+    ;
+}
+
+.caixa {
+    display: grid;
+    width: 610px;
+    height: 200px;
+    margin: 10px;
+}
+
+.um {
+    grid-area: one;
+    width: 300px;
+    height: 50px;
+}
+
+.dois {
+    grid-area: two;
+    width: 300px;
+    height: 50px;
+}
+
+.tres{
+    grid-area: three;
+    width: 300px;
+    height: 50px;
+}
+
+.quatro{
+    grid-area: four;
+    width: 300px;
+    height: 50px;
+}
+
+
+.cinco{
+    grid-area: five;
+}
+.caixa input, textarea {
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.contact button {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #0ef;
+    color: white;
+}
+
+.title-contact {
+    color: white;
+}
+
+.title-contact h1 strong {
+    color: #0ef;
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #1f242d;
+}
+
+label i {
+    color: white;
+}
+#check, #menu-check {
+    display: none;
+    cursor: pointer;
+}
+@media(max-width: 800px){
+     .menu ul {
+        margin: 0;
+     }
+     .menu ul li {
+        font-size: 15px;
+        padding: 0 5px;
+     }
+     .title {
+        margin: 0;
+        margin-left: 40px;
+        font-size: 15px;
+     }
+     .local_text_home {
+        padding-left: 10px;
+     }
+     .image_home img {
+        width: 150px;
+        height: 300px;
+        padding-top: 150px;
+        margin-right: 20px;  
+     }
+     .title_home{
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        padding-bottom: 30px;
+     }
+     .title_home h3 {
+        font-size: 15px;
+     }
+     .projects{
+        height: fit-content;
+     }
+     .local_text_about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+     }
+    .image_about, .image_about img {
+        display: none;
+    }
+     .paigrid {
+        grid-template-columns: 1fr;
+        place-items: center;
+     }
+     .box{
+        display: grid;
+        padding: 0;
+        margin: 0;
+        place-items: center;
+        width: 1fr;
+    }
+     .box img {
+        max-width: 100%;
+        margin: 15px 0;
+     }
+     .caixa{
+        width: 300px;
+     }
+     .um, .dois, .tres, .quatro{
+        width: 150px;
+     }
+     .menu{
+        display: none;
+     }
+     #menu-check {
+        display: flex;
+        margin-right: 40px;
+        margin-top: 10px;
+     }
+     #check:checked ~ .menu{
+        display: flex;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+       justify-content: space-around;
+   }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Victor Lapa</title>
+      <link rel="stylesheet" href="src/style/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <script src=
+         "https://smtpjs.com/v3/smtp.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="title">
+            <h4>Portfolio</h4>
+         </div>
+         <label for="check"><i class="fa-solid fa-bars" id="menu-check"></i></label>
+         <input type="checkbox" id="check">  
+         <div class="menu">
+            <ul>
+               <li onclick="home()">Home</li>
+               <li onclick="about()">About</li>
+               <li onclick="project()">Projects</li>
+               <li onclick="contact()">Contact</li>
+            </ul>
+         </div>
+      </header>
+      <main>
+         <div id="view-home" class="home">
+            <div class="local_text_home">
+               <div class="title_home">
+                  <h3>Hello, how are you?</h3>
+                  <h1>I'm Victor Lapa</h1>
+                  <h3>And I'm studying <strong>Frontend Development</strong></h3>
+               </div>
+               <p>Hey! I am a Systems Development student, exploring HTML, CSS, JavaScript and Java. Currently, I am focused on improving my database skills. Check out my projects!</p>
+               <div class="icons">
+                  <a href="https://br.linkedin.com/in/victor-lapa-7b4476293?trk=people-guest_people_search-card" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/VictorLapaDev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.instagram.com/victor.lapa_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+               <div class="download">
+                  <button id="pdf" type="button">Download CV</button>
+               </div>
+            </div>
+            <div class="image_home">
+               <img src="src/image/png/eu.png" alt="">
+            </div>
+         </div>
+         <div id="view-about" class="about">
+            <div class="image_about">
+               <img src="src/image/png/eu.png" alt="">
+            </div>
+            <div class="local_text_about">
+               <h1>About <strong>Me</strong></h1>
+               <h3>Frontend Developer</h3>
+               <p id="paragraph-read">My name is Victor, I'm 19 years old and I'm from São Paulo. My programming journey began in 2023, when i've been started a technical course. Today, I am studying to be a technician in Systems Development, continuing to improve my skills and build my path in the exciting world of technology.</p>
+               <div class="read">
+                  <button id="read" onclick="Reading()" type="button">Read More</button>
+               </div>
+            </div>
+         </div>
+         <div id="view-project" class="projects">
+            <div class="title_projects">
+               <h1>Latest <strong>Project</strong></h1>
+            </div>
+            <div class="paigrid">
+               <div class="box imc"><a href="https://victorlapadev.github.io/VisualizadorDeTemperatura/" target="_blank"><p>Vizualizador de Temperatura</p></a><img src="src/image/png/visualizadortemp.png" alt=""></div>
+               <div class="box lanchonete"><a href="https://victorlapadev.github.io/ValidadorCPFJavaScript/" target="_blank"><p>Validador de CPF</p></a><img src="src/image/png/validadorCPF.png" alt=""></div>
+               <div class="box senai"><a href="https://VictorLapaDev.github.io/MeuPrimeiroJavascript/" target="_blank"><p>Calculadora de Notas</p></a><img src="src/image/png/CalculadoraDeNotas.png" alt=""></div>
+            </div>
+         </div>
+         <div id="view-contact" class="contact">
+            <div class="title-contact">
+               <h1>Contact <strong>Me</strong></h1>
+            </div>
+            <div class="grid-contact">
+               <div class="caixa um">
+                  <input type="text" id="box-first-name" placeholder="First Name">
+               </div>
+               <div class="caixa dois">
+                  <input type="text" id="box-last-name" placeholder="Last Name">
+               </div>
+               <div class="caixa tres">
+                  <input type="text" id="box-number" placeholder="Number. Example: (11)94002-8922">
+               </div>
+               <div class="caixa quatro">
+                  <input type="text" id="box-email" placeholder="Email Address">
+               </div>
+               <div class="caixa cinco">
+                  <textarea cols="30" rows="5" id="box-message" placeholder="Your message"></textarea>
+               </div>
+            </div>
+            <button onclick="Submit()" type="submit">Submit</button>
+         </div>
+      </main>
+      <footer>
+         <span>&copy; | Victor Lapa</span>
+      </footer>
+      <script src="src/script/script.js"></script>
+   </body>
+</html>
